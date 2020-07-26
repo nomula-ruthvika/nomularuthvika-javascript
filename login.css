@@ -1,0 +1,29 @@
+.log {
+	border:5px solid #FF8333;
+	text-align:center;
+padding:10px;
+margin:30px 300px;
+border-radius:10px;
+}
+h1 {
+	color:black;
+	background-color:white;
+	text-align:center;
+}
+.para {
+	color:white;
+	background-color:blue;
+	text-align:center;
+	
+}
+.p {
+	color:white;
+	background-color:orange;
+	text-align:center;
+}	
+.e {
+	color:white;
+	background-color:#33FFE9;
+	text-align:center;
+	
+}

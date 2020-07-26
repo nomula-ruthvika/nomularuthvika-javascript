@@ -1,0 +1,80 @@
+<html>
+    <head>
+          <title>Registration Form</title>
+		  <link href="login.css" type="text/css" rel="stylesheet">
+   <script type=text/javascript>
+   function validate()
+   {
+   
+   var i;
+   var name_str=document.my_form.name;
+   var phonID=document.my_form.ph_txt;
+   var ph_str=document.my_form.ph_txt.value;
+   var str=document.my_form.Email_txt.value;
+   if((name.str.value==null||(name_str.value==""))
+   {
+   alert("Enter some name")
+   return false
+   }
+   if(ph_str.length<1||ph_str.length>11)
+   alert("Invalid length of Phone Number")
+   return false
+   }
+   for(i=0;i<ph_str.length;i++)
+   {
+   var ch=ph_str.charAt(i);
+   if(((ch<"0")||(ch>"9")))
+   {
+   alert("Invalid phone number")
+   phoneID.focus()
+   return false
+   }
+   }
+   var index_at=str.indexOf("@")
+   var len=str.length
+   var index_dot=str.indexOf(".")
+   var emailID=document.my_form.Email_txt
+   if((emailID.value==null)||(emailID.value==""))
+   {
+   alert("please Enter your Email ID)
+   emailID.focus()
+   return false
+   }
+   if(str.indexOf("@")==-1)
+   {
+   alert("Invalid email ID")
+   return false
+   }
+   if(str.indexOf(".")==-1||str.indexOf(".")==0||str.indexOf(".")==index_at)
+   {
+   alert("Invalid email ID)
+   return false
+   }
+   if(str.indexOf("@").(index_at+1))!==-1)
+   {
+   alert("Invalid email ID")
+   return false
+   if(str.indexOf(" ")!=-1)
+   {
+   alert("Invalid email ID")
+   return false
+   }
+   }
+   </script>
+ </head>
+      <body>
+<div class="log" align="center">
+<form name=my_form onsubmit=validate()>
+<input type="text" name="name" placeholder="enter name"><br><br>
+<input type="email" name="Email_txt" placeholder="enter email"><br><br>
+ <input type="password" name="password" placeholder="enter password"><br><br>
+ <input type="text" name="ph_txt" placeholder="enter phone number"><br><br>
+ <input type ="submit" value="register">
+ </form>
+ <p>-----------------or----------------</p>
+ <p class="para">f</p>
+ <p class="p">g</p>
+ <p class="e"> < EPAM LOGIN > </p>
+</div>
+</body>
+</html>
